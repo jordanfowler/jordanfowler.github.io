@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+![Portrait](/assets/img/portrait.jpg)
