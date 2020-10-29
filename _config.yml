@@ -37,7 +37,7 @@ github_username:  jordanfowler
 logo: /assets/img/portrait.jpg
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
