@@ -1,7 +1,9 @@
----
-layout: default
-title: Projects
-permalink: /projects/
----
+<!--
+    ---
+    layout: default
+    title: Projects
+    permalink: /projects/
+    ---
 
-## Under construction...
+    ## Under construction...
+-->

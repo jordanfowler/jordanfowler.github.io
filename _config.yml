@@ -29,11 +29,12 @@ github: [metadata]
 title: Jordan Fowler
 email: me@jordanfowler.co
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a software engineer, entrepreneur, and investor. Here you can find some thoughts, projects, and occasional adventure/travel content.
+  Software engineer working on alternative assets and data sources. Otherwise I'm outside, probably fly fishing. 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jordanfowler.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jordanfowler_
 github_username:  jordanfowler
+linkedin_username: jordanfowler
 logo: /assets/img/portrait.jpg
 
 # Build settings

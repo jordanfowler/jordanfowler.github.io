@@ -1,7 +1,9 @@
----
-layout: default
-title: Resume/CV
-permalink: /resume/
----
+<!--
+    ---
+    layout: default
+    title: Resume/CV
+    permalink: /resume/
+    ---
 
-## Under construction...
+    ## Under construction...
+-->
