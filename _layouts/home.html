@@ -30,7 +30,9 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
+        {%- if site.show_full_post -%}
+          {{ post.content }}
+        {%- elsif site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
       </li>
