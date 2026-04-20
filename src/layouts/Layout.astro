@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "AI Automation Consultant · Co-founder, DataKit" } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
+  <title>{title} — Jordan Fowler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white text-dtkt-black font-sans antialiased">
+  <header class="border-b border-gray-100">
+    <nav class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="text-dtkt-blue font-semibold text-lg tracking-tight">Jordan Fowler</a>
+      <div class="flex items-center gap-8 text-sm font-medium text-dtkt-dark">
+        <a href="/services" class="hover:text-dtkt-blue transition-colors">Services</a>
+        <a href="/about" class="hover:text-dtkt-blue transition-colors">About</a>
+        <a href="/contact" class="hover:text-dtkt-blue transition-colors">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="border-t border-gray-100 mt-24">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-sm text-gray-500">
+      <div>
+        <p class="font-medium text-dtkt-dark">Jordan Fowler</p>
+        <p><a href="mailto:me@jordanfowler.co" class="hover:text-dtkt-blue transition-colors">me@jordanfowler.co</a></p>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://linkedin.com/in/jordanfowler" class="hover:text-dtkt-blue transition-colors" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jordanfowler" class="hover:text-dtkt-blue transition-colors" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://withdatakit.com" class="hover:text-dtkt-blue transition-colors" target="_blank" rel="noopener">DataKit</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

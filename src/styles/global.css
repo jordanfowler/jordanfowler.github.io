@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dtkt-green: #0bb14e;
+  --color-dtkt-blue: #2a3182;
+  --color-dtkt-black: #060818;
+  --color-dtkt-light: #f7f7f7;
+  --color-dtkt-dark: #292929;
+  --radius-DEFAULT: 0.6rem;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-serif: "IBM Plex Serif", serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}

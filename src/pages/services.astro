@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    title: "Lead Enrichment Pipeline",
+    description: "Enriched lead lists, delivered weekly to Google Sheets. Company, decision maker, LinkedIn, email, and a personalized one-liner — automatically.",
+    price: "Starting at $600/month",
+  },
+  {
+    title: "Real Estate Deal Alerts",
+    description: "Get SMS + email alerts when a property in your market is priced 20%+ below recent comps. You define the criteria. The system runs 24/7.",
+    price: "Starting at $300/month",
+  },
+  {
+    title: "Competitive Intelligence Digest",
+    description: "Weekly email digest of competitor pricing changes, new features, reviews, and hiring signals. Set it and forget it — shows up in your inbox every Monday morning.",
+    price: "Starting at $800/month",
+  },
+  {
+    title: "Custom Automation Project",
+    description: "Have a specific data workflow that eats hours each week? I'll scope, build, and hand it off. Typical turnaround: 2–5 days. Flat fee.",
+    price: "From $500",
+  },
+];
+---
+<Layout title="Services" description="AI automation services — lead enrichment, deal alerts, competitive intelligence, and custom pipelines.">
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h1 class="text-3xl md:text-4xl font-semibold text-dtkt-blue mb-4">Services</h1>
+    <p class="text-lg text-gray-600 mb-14 max-w-2xl">
+      Automated data pipelines, built and managed for you. You get the output; I handle everything else.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {services.map((s) => (
+        <div class="border border-gray-200 rounded-[0.6rem] p-8 flex flex-col gap-4">
+          <h2 class="text-xl font-semibold text-dtkt-blue">{s.title}</h2>
+          <p class="text-gray-600 leading-relaxed flex-1">{s.description}</p>
+          <div class="pt-2 flex items-center justify-between">
+            <span class="text-sm font-medium text-dtkt-dark">{s.price}</span>
+            <a href="https://calendly.com/datakit/book-a-demo" class="inline-block bg-dtkt-green text-white text-sm font-medium px-5 py-2 rounded-[0.6rem] hover:opacity-90 transition-opacity">
+              Book a call
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
